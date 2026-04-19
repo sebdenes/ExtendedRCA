@@ -1,0 +1,8 @@
+{
+  "name": "extended-rca",
+  "version": "0.1.0",
+  "description": "Extended root cause analysis for software incidents — methodology-aware RCA (5-whys, fishbone, layered causation) with a structured engineering-grade postmortem artifact. Invoke with /rca.",
+  "author": {
+    "name": "Seb"
+  }
+}

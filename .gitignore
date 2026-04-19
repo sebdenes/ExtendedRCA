@@ -1,0 +1,14 @@
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Output / scratch
+*.log
+scratch/
+tmp/
+*.bak
+postmortem-*.md
