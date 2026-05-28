@@ -16,11 +16,17 @@ This plugin resists that pull. It gives Claude Code a disciplined workflow — 5
 
 ## Quick start
 
-```bash
-# 1. Clone into your Claude Code plugins directory
-git clone https://github.com/sebdenes/ExtendedRCA ~/.claude/plugins/extended-rca
+Inside Claude Code:
 
-# 2. Restart Claude Code. Then in any project:
+```
+/plugin marketplace add sebdenes/ExtendedRCA
+/plugin install extended-rca@extended-rca
+/reload-plugins
+```
+
+Then in any project:
+
+```
 /rca we had a 45-minute checkout outage starting 14:02 UTC, 17% of requests failed...
 ```
 
@@ -95,7 +101,9 @@ The skill ships with a small eval suite in [`evals/`](./evals). Six cases coveri
 
 ```
 extended-rca/
-├── .claude-plugin/plugin.json
+├── .claude-plugin/
+│   ├── plugin.json                      # plugin manifest
+│   └── marketplace.json                 # marketplace manifest (single-plugin)
 ├── commands/
 │   └── rca.md                           # /rca slash command
 ├── skills/extended-rca/
@@ -123,10 +131,15 @@ extended-rca/
 
 ## Installation
 
-```bash
-git clone https://github.com/sebdenes/ExtendedRCA ~/.claude/plugins/extended-rca
-# Restart Claude Code. The /rca command is now available.
+Inside Claude Code:
+
 ```
+/plugin marketplace add sebdenes/ExtendedRCA
+/plugin install extended-rca@extended-rca
+/reload-plugins
+```
+
+The `/rca` command is now available.
 
 ## Contributing
 
